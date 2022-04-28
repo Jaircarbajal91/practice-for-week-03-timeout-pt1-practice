@@ -23,7 +23,8 @@ setSecondsTimeoutArgs(function(arg1, arg2) {
 ***********************************************************************/
 
 function setSecondsTimeoutArgs(cb, delayInSeconds, ...args) {
-  // Your code here
+  let delay = delayInSeconds * 1000;
+  setTimeout(cb, delay, ...args);
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
